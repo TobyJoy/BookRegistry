@@ -1,0 +1,4 @@
+$("#books_list").html("<%=escape_javascript(render("books_list"))%>");
+$('.sort_arrow').removeClass('fa fa-angle-down')
+$('.'+<%=params[:sort_obj]%>).find('.sort_arrow').removeClass('fa fa-angle-down')
+$('.'+<%=params[:sort_obj]%>).data('sort-order',<%=params[:sort_order]%>)

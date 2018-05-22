@@ -1,0 +1,17 @@
+development:
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: postgres
+  database: book_registry_db
+  password: postgres9
+
+test:
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  host: localhost
+  username: postgres
+  database: test_book_db
+  password: postgres9

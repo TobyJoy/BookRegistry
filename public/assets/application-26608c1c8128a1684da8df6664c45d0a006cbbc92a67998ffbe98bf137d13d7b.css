@@ -1,0 +1,691 @@
+/* line 15, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #FFF;
+  width: 100%;
+  min-height: 100%;
+  background: #f1f1f1;
+}
+
+/* line 24, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header {
+  float: left;
+  width: 100%;
+  min-height: 80px;
+  border: 0px solid red;
+  border-bottom: 1px solid #f1f1f1;
+  background: #FFF;
+  /*navigation*/
+}
+/* line 33, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .logo {
+  float: left;
+  width: 15%;
+  min-height: 80px;
+  border: 0px solid red;
+  display: flex;
+  align-items: center;
+}
+/* line 40, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .logo span {
+  width: 100%;
+  float: left;
+  text-align: center;
+}
+/* line 46, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .logo a {
+  text-decoration: none;
+  color: #30b55a;
+  font-weight: bold;
+}
+/* line 53, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .navigation {
+  float: left;
+  width: 20%;
+  min-height: 80px;
+  border: 0px solid red;
+  display: flex;
+  align-items: center;
+}
+/* line 61, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .navigation .nav {
+  width: 35%;
+  float: left;
+  text-align: center;
+  padding: 30px 15px;
+}
+/* line 67, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .navigation .nav a {
+  font-size: 14px;
+  color: gray;
+  text-decoration: none !important;
+}
+/* line 73, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .navigation .nav:hover {
+  background: #30b55a;
+  color: #FFF;
+  cursor: pointer;
+}
+/* line 77, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .navigation .nav:hover a {
+  color: #FFF;
+}
+/* line 86, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .search {
+  float: left;
+  width: 35%;
+  min-height: 80px;
+  border: 0px solid red;
+  display: flex;
+  align-items: center;
+  /*search-container*/
+}
+/* line 94, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .search .search-container {
+  float: left;
+  width: 90%;
+  margin-left: 5%;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  overflow: hidden;
+}
+/* line 103, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .search .search-container input {
+  border: 0;
+  float: left;
+  width: 80%;
+  height: 30px;
+  margin-left: 5%;
+  outline: 0;
+  height: 42px;
+}
+/* line 113, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .search .search-container .submit {
+  float: right;
+  background: #30b55a;
+  color: #FFF;
+  text-align: center;
+  padding: 10px;
+  width: 10%;
+  cursor: pointer;
+}
+/* line 123, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .search .search-container .submit:hover {
+  background: #359252;
+}
+/* line 129, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .profile {
+  float: right;
+  width: 25%;
+  min-height: 80px;
+  border: 0px solid red;
+  display: flex;
+  align-items: center;
+  margin-right: 1%;
+}
+/* line 137, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+header .profile .action {
+  float: right;
+  width: 50%;
+  text-align: right;
+}
+
+/*header*/
+/* line 147, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.page-outer-contents {
+  float: left;
+  width: 100%;
+  height: 100%;
+  /*page-contents*/
+}
+/* line 153, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.page-outer-contents .page-contents {
+  float: left;
+  width: 90%;
+  margin-left: 5%;
+  background: #FFF;
+  height: 100%;
+  padding-bottom: 40px;
+  margin-top: 35px;
+}
+
+/*page-outer-contents*/
+/* line 165, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.album-grid {
+  margin: 20px -20px 0 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  float: left;
+  width: 90%;
+  margin-left: 5%;
+  /*album-item*/
+}
+/* line 175, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.album-grid .album-item {
+  float: left;
+  height: 230px;
+  width: 20%;
+  border: 0px solid red;
+  padding: 0 0px 35px 0;
+  position: relative;
+  vertical-align: top;
+  margin-bottom: 10px;
+  /*album-content*/
+}
+/* line 186, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.album-grid .album-item .album-content {
+  float: left;
+  width: 90%;
+  margin-left: 5%;
+  height: 100%;
+  margin-top: 35px;
+  cursor: pointer;
+}
+/* line 195, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.album-grid .album-item .album-content .image {
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+/* line 201, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.album-grid .album-item .album-content .image img {
+  width: 200px;
+  height: 200px;
+}
+/* line 207, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.album-grid .album-item .album-content .name {
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: gray;
+  font-size: 14px;
+}
+/* line 217, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.album-grid .album-item .album-content:hover .name {
+  font-weight: bold;
+}
+
+/*album-grid*/
+/* line 226, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.noRecords {
+  float: left;
+  padding: 45px 0 20px 0;
+  width: 80%;
+  margin-left: 5%;
+}
+/* line 230, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.noRecords span {
+  color: #30b55a;
+}
+
+/* line 233, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.form-wrapper {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  padding-top: 20px;
+}
+
+/* line 235, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.page-form {
+  float: left;
+  width: 100%;
+}
+/* line 238, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.page-form .row {
+  float: left;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+
+/* line 241, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.breadcrumbs {
+  float: left;
+  width: 100%;
+  padding: 10px 0 10px 0;
+}
+/* line 244, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.breadcrumbs span {
+  margin-left: 2%;
+}
+/* line 245, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.breadcrumbs .active {
+  color: #30b55a;
+  margin-left: 0;
+}
+
+/* line 248, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.notification {
+  float: left;
+  width: 90%;
+  margin-left: 5%;
+  color: #FFF;
+  margin-top: 20px;
+  padding: 10px 0 10px 0;
+}
+/* line 252, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.notification .icon {
+  float: left;
+  width: 5%;
+  text-align: center;
+}
+/* line 254, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.notification .message {
+  float: left;
+  width: 89%;
+  margin-left: 1%;
+}
+/* line 256, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.notification .close_notice {
+  float: right;
+  width: 2%;
+  color: #FFF;
+  cursor: pointer;
+}
+
+/*notification*/
+/* line 258, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.error {
+  background: #e91e63;
+}
+
+/* line 259, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/application_layout.css.scss */
+.success {
+  background: #009688;
+}
+/* line 1, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.album_search {
+  color: #FFF !important;
+}
+
+/* line 3, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 7, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+#model_window_main_view {
+  float: left;
+  width: 60%;
+  position: absolute;
+  top: 50px;
+  margin-bottom: 10px;
+  left: 15%;
+  background: white;
+  box-shadow: 0px 0px 20px 3px lightgrey;
+  z-index: 5;
+  padding-bottom: 20px;
+  display: none;
+}
+
+/* line 21, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.light_box_wrapper {
+  float: left;
+  width: 100%;
+  position: absolute;
+  background: #d3d3d3c4;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  display: none;
+}
+
+/* line 34, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.user_profile {
+  width: 100%;
+  margin-left: 0;
+}
+
+/* line 39, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.user_profile .photo_display_sec {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 45, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.user_profile .image_div {
+  display: inline-block;
+  width: 240px;
+  height: 240px;
+  border: 1px solid lightgray;
+}
+
+/* line 52, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.user_profile .photo_section {
+  float: left;
+  width: 40%;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+
+/* line 59, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.user_profile .page-form {
+  width: 60%;
+  padding-left: 15px;
+  padding-right: 30px;
+}
+
+/* line 65, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.user_profile .row {
+  margin: 0;
+}
+
+/* line 69, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+select {
+  padding: .375rem .75rem;
+  border-radius: 2px;
+  border: 1px solid lightgray;
+  width: 100%;
+  margin-bottom: 10px;
+  background: white;
+  color: gray;
+}
+
+/* line 79, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.upload_box {
+  cursor: pointer;
+  font-size: 10px;
+  width: 87%;
+  margin-top: 6px;
+  pointer-events: none;
+  border: none !important;
+  background: #f0f0f0;
+  height: 44px;
+  margin-left: -10px;
+  padding-top: 0px;
+  padding-left: 23px;
+}
+
+/* line 93, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.upload_image {
+  text-align: center;
+  color: #00adef;
+  cursor: pointer;
+  font-size: 25px;
+  float: left;
+  border-radius: 50px;
+  border: 5px solid #6fc8ea;
+  height: 55px;
+  width: 55px;
+  padding-top: 9px;
+  z-index: 100;
+  position: relative;
+  background: white;
+}
+
+/* line 108, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+#target > img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 110, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_header {
+  float: left;
+  width: 100%;
+  background: #7189ce;
+  font-size: 0;
+  margin-bottom: 3px;
+}
+/* line 117, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_header .header {
+  width: 12%;
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-right: 1px solid white;
+}
+/* line 129, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_header .header:last-child {
+  border-right: 0;
+  width: 16%;
+}
+/* line 134, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_header .book_name {
+  width: 24% !important;
+}
+
+/* line 139, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_contents {
+  float: left;
+  width: 100%;
+  margin-bottom: 3px;
+  background: white;
+  font-size: 0;
+  border-bottom: 1px solid #eaeaea;
+}
+/* line 147, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_contents .content {
+  width: 12%;
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-right: 1px solid #eaeaea;
+}
+/* line 158, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_contents .edit_icon {
+  background: #3F51B5;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* line 166, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_contents .view_icon {
+  background: #3997a2;
+  padding: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* line 174, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_contents .delete_icon {
+  background: #e44b4b;
+  padding: 5px 7px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* line 182, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_contents .publish_book span {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+/* line 189, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_contents .status_false {
+  background: red;
+}
+/* line 193, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_contents .status_true {
+  background: green;
+}
+/* line 197, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_view_contents .content:last-child {
+  border-right: 0;
+  width: 16%;
+}
+
+/* line 203, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_cover {
+  float: left;
+  width: 100%;
+  text-align: center;
+}
+/* line 208, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.book_cover img {
+  width: 90%;
+}
+
+/* line 213, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.details_sec {
+  float: left;
+  width: 100%;
+  margin-bottom: 5px;
+  color: #171717;
+}
+
+/* line 220, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.name {
+  float: left;
+  width: 40%;
+}
+
+/* line 225, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.description {
+  float: left;
+  width: 60%;
+}
+
+/* line 230, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.show_header {
+  float: left;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #9a9a9a;
+}
+
+/* line 237, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.header_style {
+  float: left;
+  color: #ffffff;
+}
+
+/* line 242, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.close_window {
+  float: right;
+  font-weight: bold;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+/* line 250, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/books.scss */
+.right_sec {
+  float: left;
+  height: 283px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* line 1, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+.login_default_style {
+  margin-left: auto;
+  margin-right: auto;
+  top: 45%;
+  position: fixed;
+  margin-top: -9em;
+  margin-left: -15em;
+}
+
+/* line 10, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+.login_header {
+  text-align: center;
+  font-size: 30px;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+/* line 17, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+.alternate_login {
+  text-align: center;
+  width: 100%;
+  float: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* line 25, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+.new_user {
+  float: left;
+  width: 100%;
+}
+
+/* line 30, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+.login_textbox {
+  width: 100%;
+  padding: 5px;
+  font-size: 12px;
+}
+
+/* line 36, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+.login_fields {
+  padding-top: 15px;
+}
+
+/* line 40, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+.login_button {
+  width: 100%;
+}
+
+@media only screen and (min-width: 240px) and (max-width: 767px) and (orientation: portrait) {
+  /* line 46, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+  .login_page_main {
+    width: 100%;
+    left: 40%;
+  }
+}
+@media only screen and (min-width: 240px) and (max-width: 767px) and (orientation: landscape) {
+  /* line 51, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+  .login_page_main {
+    width: 70%;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  /* line 56, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+  .login_page_main {
+    width: 60%;
+    left: 45%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  /* line 61, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+  .login_page_main {
+    width: 55%;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 1025px) and (max-width: 1351px) {
+  /* line 66, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+  .login_page_main {
+    width: 35%;
+    left: 50%;
+  }
+}
+@media only screen and (min-width: 1352px) and (max-width: 3200px) {
+  /* line 71, /home/toby/Documents/Aptana Studio 3 Workspace/BookRegistry/app/assets/stylesheets/login.css.scss */
+  .login_page_main {
+    width: 35%;
+    left: 50%;
+  }
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+

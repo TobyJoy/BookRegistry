@@ -1,0 +1,259 @@
+@mixin border
+{
+  border:0px solid red;
+}
+
+@mixin flex{
+  display:flex; align-items:center;
+}
+
+$app-background : #f1f1f1;
+$app-font : gray;
+$app-font-size : 14px;
+$app-button : #30b55a;
+
+html, body{
+  margin:0; 
+  padding:0; 
+  background: #FFF; 
+  width: 100%; 
+  min-height:100%; 
+  background :$app-background;
+}
+
+header
+{
+  float:left; 
+  width: 100%; 
+  min-height: 80px; 
+  @include  border; 
+  border-bottom:1px solid $app-background; 
+  background : #FFF;
+
+  .logo
+  {
+    float:left; 
+    width: 15%; 
+    min-height: 80px;  
+    @include  border; @include flex;
+    
+    span{
+      width:100%;
+      float:left; 
+      text-align: center;
+    }
+    
+    a{
+      text-decoration: none; 
+      color :$app-button; 
+      font-weight:bold;
+    }
+  }
+  
+  .navigation
+  {
+    float:left; 
+    width: 20%; 
+    min-height: 80px; 
+    @include  border; 
+    @include flex;
+    
+    .nav{
+      width:35%;
+      float:left; 
+      text-align: center; 
+      padding:30px 15px;
+      
+      a{
+        font-size :$app-font-size; 
+        color: $app-font; 
+        text-decoration:none !important;
+      }
+      
+      &:hover{
+        background :$app-button; 
+        color :#FFF; cursor:pointer;
+        
+      a{ 
+        color :#FFF;
+       }
+      }
+    }
+    
+    
+  }/*navigation*/
+  
+  .search
+  {
+    float:left; 
+    width: 35%; 
+    min-height: 80px;  
+    @include  border; 
+    @include flex;
+    
+    .search-container
+    {
+      float:left; 
+      width:90%;
+      margin-left: 5%; 
+      border:1px solid lightgray; 
+      border-radius:20px; 
+      overflow:hidden;
+      
+      input{
+        border:0; 
+        float:left; 
+        width:80%;
+        height:30px;
+        margin-left:5%; 
+        outline:0; 
+        height:42px;
+      }
+      
+      .submit{
+        float:right; 
+        background:$app-button; 
+        color:#FFF;
+        text-align:center; 
+        padding:10px; 
+        width:10%; 
+        cursor: pointer;
+      }
+      
+      .submit:hover{
+        background: #359252;
+      }
+    }/*search-container*/
+  }
+  
+  .profile{
+    float:right; 
+    width: 25%; 
+    min-height: 80px;  
+    @include  border; 
+    @include flex; 
+    margin-right:1%;
+    
+    .action{
+      float:right; 
+      width: 50%; 
+      text-align: right;
+    }
+  }
+  
+
+}/*header*/
+
+.page-outer-contents
+{
+  float:left; 
+  width:100%; 
+  height:100%;
+    
+    .page-contents
+      {
+        float:left; 
+        width: 90%; 
+        margin-left: 5%; 
+        background:#FFF;
+        height:100%; 
+        padding-bottom: 40px; 
+        margin-top:35px;
+      }/*page-contents*/
+}/*page-outer-contents*/
+
+.album-grid
+{
+  margin: 20px -20px 0 0; 
+  outline: 0; 
+  padding: 0;
+  vertical-align: baseline; 
+  float:left; 
+  width:90%; 
+  margin-left:5%;
+  
+  .album-item
+  {
+    float:left; 
+    height:230px; 
+    width:20%; 
+    border:0px solid red;
+    padding: 0 0px 35px 0;
+    position: relative;
+    vertical-align: top;
+    margin-bottom: 10px; 
+    
+    .album-content
+    { 
+      float:left; 
+      width: 90%; 
+      margin-left: 5%; 
+      height:100%;     
+      margin-top: 35px; 
+      cursor:pointer;
+  
+      .image 
+      {   
+        float:left; 
+        width:200px;
+        height:200px;
+        
+        img{
+          width:200px;
+          height:200px;
+        }
+      }
+      
+      .name{
+        float:left;
+        width:100%;
+        text-align:center; 
+        color:$app-font; 
+        font-size: $app-font-size; 
+      }
+      
+      &:hover{
+        
+        .name {
+          font-weight:bold;
+         }
+      }
+    }/*album-content*/
+  
+  } /*album-item*/
+}/*album-grid*/
+
+.noRecords
+{
+  float:left; padding:45px 0 20px 0; width:80%; margin-left: 5%;
+  
+  span{color :$app-button;}
+}
+
+.form-wrapper{float:left; width: 50%; margin-left: 25%; padding-top:20px;}
+
+.page-form
+{
+  float:left; width:100%;
+  .row{float:left; width: 100%; padding:10px 0 10px 0;}
+}
+
+.breadcrumbs
+{
+  float:left; width:100%; padding: 10px 0 10px 0;
+  span{margin-left: 2%;}
+  .active{ color: $app-button;margin-left: 0;}
+}
+
+.notification
+{
+  float:left; width: 90%; margin-left: 5%; color :#FFF; margin-top:20px; padding:10px 0 10px 0; 
+  
+  .icon{float:left; width: 5%; text-align:center;}
+  
+  .message{float:left; width: 89%; margin-left:1%;}
+  
+  .close_notice{float:right; width: 2%;color :#FFF; cursor:pointer;}
+}/*notification*/
+.error{background : #e91e63; }
+.success{background : #009688; }

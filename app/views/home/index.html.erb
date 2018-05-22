@@ -1,0 +1,16 @@
+<%if !@books.blank?%>
+	<div class="album-grid">
+		<% @books.each do |book|%>
+			<div class="album-item">
+				<%=link_to book_path(book.id), remote: true do %>
+					<div class="album-content">
+						<div class="image"><%=image_tag book.book_cover_url(:thumb) %></div>
+						<div class="name"><%=book.book_name%></div>	
+					</div>
+				<%end%>
+			</div>
+		<%end%>
+	</div>
+<%else%>
+	<div class="noRecords"><span class="fa fa-info-circle"></span> No Albums Found</div>
+<%end%>

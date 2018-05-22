@@ -1,0 +1,26 @@
+<div class="login_page_main login_default_style">	
+	<div class="login_header">
+		<span>Log In or</span> 
+		<%= link_to new_registration_path(resource_name) do %>
+			<span style="color: #4c98e6;">Sign UP</span>
+		<% end %>
+	</div>
+	
+	<div style="color: red;font-size: 12px;"><%=flash[:error]%></div>
+	<div style="color: green;font-size: 12px;"><%=flash[:notice]%></div>
+	
+	<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+	  <div class="field login_fields" style="margin-left: auto;margin-right: auto;">
+	    <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: "Email address", class: "form-control"  %>
+	  </div>
+	
+	  <div class="field login_fields" style="margin-left: auto;margin-right: auto;">
+	    <%= f.password_field :password, autocomplete: "off", placeholder: "Password", class: "form-control" %>
+	  </div>
+	
+	  <div class="actions login_fields" style="margin-left: auto;margin-right: auto;">
+	    <%= f.submit "Log in", class: "login_button  btn btn-info"  %>
+	  </div>
+	<% end %>
+
+</div>

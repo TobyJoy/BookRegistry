@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <%= csrf_meta_tags %>
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  </head>
+
+  <body>
+  	<header>
+  		<div class="logo">
+  			<span>
+  				<%=link_to root_url do%>
+  					<div>BookRegistry</div>
+  				<%end%>
+  			</span>
+  		</div>
+		<div class="navigation">
+			<%if current_user%>
+				<div class="nav">
+					<%= link_to "Add Books", new_book_path%>
+				</div>
+				<div class="nav">
+					<%= link_to "Publish Books", books_path%>
+				</div>
+			<%end%>
+		</div>
+  		<div class="profile">
+  			<%if current_user%>
+	  			<div class="action">
+	  				<%= current_user.email %>
+	  			</div>
+	  			<div class="action">
+	  				<%= link_to "Logout", destroy_user_session_path, method: :delete%>
+	  			</div>
+	  		<%else%>
+	  			<div class="action">
+	  				<%= link_to "Log in", new_user_session_path %>
+	  			</div>
+	  			<div class="action">
+	  				<%= link_to "Sign up", new_user_registration_path %>
+	  			</div>
+  			<%end%>
+  		</div>
+  		
+  	</header>
+  	
+  	<% if flash[:error]%>
+	  	<div class="notification error">
+	  		<div class="icon"><span class="fa fa-info-circle"></span></div>
+	  		<div class="message"><%=flash[:error]%></div>
+	  		<div class="close_notice"  onclick="$('.error').hide();"><span class="fa fa-times"></span></div>
+	  	</div>
+  	<%end%>
+  	
+  	<% if flash[:success]%>
+	  	<div class="notification success">
+	  		<div class="icon"><span class="fa fa-check-circle"></span></div>
+	  		<div class="message"><%=flash[:success]%></div>
+	  		<div class="close_notice" onclick="$('.success').hide();"><span class="fa fa-times"></span></div>
+	  	</div>
+  	<%end%>
+  	
+  	<div class="page-outer-contents">
+		<div class="page-contents">
+	    	<%= yield %>
+	    </div>
+	</div>
+	
+	<div id="model_window_main_view"></div>
+	<div class="light_box_wrapper"></div>
+	
+  </body>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</html>
+
