@@ -15,4 +15,6 @@ Things you may want to cover:
 
 * How to run the test suite : bundle exec rspec spec
 
+**You can sort details according to your need from "Publish Books" page by clicking on the field heading which you want to be sorted.**
+
 * ...
