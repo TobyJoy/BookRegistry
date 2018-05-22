@@ -1,11 +1,3 @@
-$(document).on 'click', '.sort_list', ->
-  sort_order = $(this).data('sort-order')
-  sort_obj = $(this).data('sort-obj')
-  $.ajax 
-    url: 'sort_books_books.js',
-    type: 'GET',
-    data: {sort_obj: sort_obj, sort_order: sort_order}
-
 window.attachment_input = (obj) ->
   $(obj).parent().children('.file_field_class').click()
   return  
@@ -45,7 +37,11 @@ $(document).on 'click', '.close_window', ->
   close_modal_window()
     
 close_modal_window = ->
-  $("#model_window_main_view").hide();
-  $("#model_window_main_view").html("");
+  $("#model_window_main_view").hide()
+  $("#model_window_main_view").html("")
   $(".light_box_wrapper").hide()
   
+$(document).on 'click', '.sort_list', ->
+  sort_order = $(this).data('sort-order')
+  sort_obj = $(this).data('sort-obj')
+  $.get('/books/sort_books.js', {sort_obj: sort_obj, sort_order: sort_order});

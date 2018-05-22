@@ -54,8 +54,9 @@ class BooksController < ApplicationController
   end
   
   def sort_books
-    params[:sort_order] = (params[:sort_order] == "asc") ? "desc" : "asc"
-    @books = current_user.books.order(params[:sort_obj].to_sym params[:sort_order].to_sym)
+    @books = current_user.books.order("#{params[:sort_obj]} #{params[:sort_order]}")
+    params[:sort_order] = (params[:sort_order] == "ASC") ? "DESC" : "ASC"
+    @arrow_class =  (params[:sort_order] == "ASC") ? ["fa fa-angle-down","fa fa-angle-up"] : ["fa fa-angle-up","fa fa-angle-down"]
   end
   
   private
